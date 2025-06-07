@@ -23,6 +23,7 @@
 
   &__input {
     resize: none;
+    cursor: pointer;
 
     border: none;
     border-bottom: 1px solid $black-color;
@@ -36,11 +37,11 @@
     &:focus {
       border-bottom: 1px solid $blue-color;
       outline: none;
-    }
 
-    /* &:invalid {
-      border-bottom: 1px solid red;
-    } */
+      &:invalid {
+        border-bottom: 1px solid red;
+      }
+    }
 
     &--field {
       height: 40px;

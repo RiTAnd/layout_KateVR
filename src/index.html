@@ -970,7 +970,6 @@
           <div class="forms contacts__forms">
             <form
               class="forms__form"
-              action="#"
               method="post"
               onsubmit="this.reset(); return false;"
             >
@@ -986,7 +985,8 @@
                   name="name"
                   id="name"
                   class="forms__input forms__input--field"
-                  required
+                  pattern="[A-Za-zА-Яа-яЕеІіЇїЄєҐґ\s]+"
+                  required=""
                 />
               </div>
 
@@ -1002,7 +1002,7 @@
                   name="email"
                   id="email"
                   class="forms__input forms__input--field"
-                  required
+                  required=""
                 />
               </div>
 
@@ -1018,7 +1018,8 @@
                   name="phone"
                   id="phone"
                   class="forms__input forms__input--field"
-                  required
+                  pattern="[0-9]{10,15}"
+                  required=""
                 />
               </div>
 
