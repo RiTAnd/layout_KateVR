@@ -23,11 +23,11 @@
 
   &__input {
     resize: none;
-    cursor: pointer;
 
     border: none;
     border-bottom: 1px solid $black-color;
 
+    color: $white-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
@@ -37,14 +37,14 @@
     &:focus {
       border-bottom: 1px solid $blue-color;
       outline: none;
-
-      &:invalid {
-        border-bottom: 1px solid red;
-      }
     }
 
     &--field {
       height: 40px;
+
+      /*&:invalid {
+        border-bottom: 1px solid $red-color;
+      }*/
     }
 
     &--message {
